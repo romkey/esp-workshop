@@ -7,14 +7,21 @@ This includes:
 - one (clone) Wemos LOLIN32 ESP32 breakout board
 - one BME280 I2C air temperature/pressure/humidity breakout board
 - one TSL2561 I2C light sensor
+- one SH1106 1.3" I2C/SPI OLED display
 - one RGB LED
 - three 330 ohm resistors (for LED)
 - two 47K ohm resistors (for I2C pullups)
 - one 100uF capacitor (bypass)
-- two 100nF capacitors (bypass)
+- three 100nF capacitors (bypass)
+- one SPDT breadboard-compatible switch
+
 - one small breadboard (optional)
 - 12 jumper wires (optional)
 - one microUSB cable (optional)
 
-## Getting Started
+- one [Furball](https://github.com/romkey/furball) printed circuit board
+- one [Discoball](https://github.com/romkey/discoball) printed circuit board
+- one voltage level shifter (bagged)
+
+https://github.com/romkey/esp-workshop
 
