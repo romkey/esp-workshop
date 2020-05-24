@@ -78,7 +78,7 @@ The TSL2561 uses the I2C bus to connect to a processor. I2C is a four wire bus, 
 
 ### SH1106 1.3" I2C/SPI OLED display
 
-![SH1106 OLED display](images/oled.jpg) 
+![SH1106 OLED display](images/sh1106-oled.jpg) 
  
 
 ### RGB LED
