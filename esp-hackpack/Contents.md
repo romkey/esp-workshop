@@ -48,7 +48,7 @@ You may need to install a serial driver in order to use this board.
 
 ### LOLIN32 ESP32 breakout board
 
-![](images/.jpg) 
+![LOLIN32 ESP32](images/lolin32.jpg) 
 
 The LOLIN32 was commonly available in 2018 but is no longer manufactured and is becoming difficult to find. It has 4MB of flash storage and a USB serial port.
 
@@ -62,7 +62,7 @@ You may need to install a serial driver in order to use this board.
 
 ### BME280 I2C air temperature/pressure/humidity breakout board
 
-![](images/.jpg) 
+![BME280 sensor](images/bme280.jpg) 
   
 The BME280 is a sensor chip which measure air temperature, pressure and humidity. It's useful for weather stations and environmental monitoring. The BME280 is well supported, with many drivers and breakout boards available.
 
@@ -70,7 +70,7 @@ The BME280 uses the I2C bus to connect to a processor. I2C is a four wire bus, w
 
 ### TSL2561 I2C light sensor
 
-![](images/.jpg) 
+![TSL2561 sensor](images/tsl2561.jpg) 
 
 The TSL2561 is a sensor chip wihch measures light intensity. It's useful for environment monitoring. It's well supported with many drivers and breakout boards available.
 
@@ -78,16 +78,16 @@ The TSL2561 uses the I2C bus to connect to a processor. I2C is a four wire bus, 
 
 ### SH1106 1.3" I2C/SPI OLED display
 
-![](images/.jpg) 
+![SH1106 OLED display](images/oled.jpg) 
  
 
 ### RGB LED
 
-![](images/.jpg) 
+![RGB LED](images/rgb-led.jpg) 
  
 ### 330 ohm resistors
 
-![](images/.jpg) 
+![330 ohm resistors](images/330-ohm-resistors.jpg) 
 
 These resistors are used to limit the current that the RGB LED draws, to avoid burning it out or burning damaging the CPU driving it.
 
@@ -99,7 +99,7 @@ See also [Why Do Resistors Have A Color Code?](https://hackaday.com/2020/01/13/w
 
 ### 47K ohm resistors
 
-![](images/.jpg) 
+![47K ohm resistors](images/47k-ohm-resistors.jpg) 
 
 These resistors are used as "pull-up" resistors, to help stabilize signals on I2C SDA and SCL lines. These lines are driven by pins on the processor which don't connect to a high voltage for high. Connecting SDA and SCL to 3.3V through a resistor will improve the reliabilty of those signals, although circuits will often work without pull-up resistors. You only need them once, although many breakout boards have pull-up resistors integrated on them. Having multiple resistors generally doesn't do any harm.
 
@@ -112,7 +112,7 @@ See also [Why Do Resistors Have A Color Code?](https://hackaday.com/2020/01/13/w
 
 ### 100uF capacitor
 
-![](images/.jpg) 
+![100uF](images/100uf-capacitor.jpg) 
  
 This is a "bypass capacitor".
 
@@ -121,13 +121,13 @@ This capacitor is polarized - it *does* matter which end you plugin on which sid
 
 ### 100nF capacitors
 
-![](images/.jpg) 
+![100nF](images/100nf-capacitors.jpg) 
 
 These capacitors are not polarized - it doesn't matter which end you plugin on which side. 
  
 ### SPDT switch
 
-![](images/.jpg) 
+![SPDT switch](images/spdt-switch.jpg) 
 
 ### Furball, Furball mini and Discoball printed circuit boards
 
@@ -145,7 +145,7 @@ If you'd like to learn more, check out its repository at https://github.com/romk
 
 The Furball uses the D1 mini and has connections for the BME280 and TSL2561 breakout boards. It can also accept a BME680 breakout, which is an upgrade from the BME280 that also reads volatile organic compounds in the air, to help measure air quality.
 
-The Furball mini can also use a Dalls 1 wire temperature waterproof sensor and a PMS5003 dust particle sensor for air quality.
+The Furball mini can also use a Dallas 1 wire temperature waterproof sensor and a PMS5003 dust particle sensor for air quality.
 
 If you'd like to learn more, check out its repository at https://github.com/romkey/furball-mini or feel free to ask me about it.
 
