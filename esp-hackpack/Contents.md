@@ -104,4 +104,33 @@ The TSL2561 uses the I2C bus to connect to a processor. I2C is a four wire bus, 
 ### SPDT switch
 
 ![](images/.jpg) 
- 
+
+### Furball, Furball mini and Discoball printed circuit boards
+
+These boards are extras. We won't be using them during the workshop. If you'd like to commit your D1 mini or LOLIN32 to run some sensors, you can easily solder them into one of these boards and have a more permanent device than you would with the breadboard.
+
+#### Furball
+
+The Furball uses the LOLIN32 and has connections for the BME280 and TSL2561 breakout boards. It can also accept a BME680 breakout, which is an upgrade from the BME280 that also reads volatile organic compounds in the air, to help measure air quality.
+
+The Furball can also use a PIR sensor to detect occupancy (presence), a PMS5003 dust particle sensor for air quality, and an audio sensor for sound levels (software for this has never worked correctly).
+
+If you'd like to learn more, check out its repository at https://github.com/romkey/furball or feel free to ask me about it. 
+
+#### Furball mini
+
+The Furball uses the D1 mini and has connections for the BME280 and TSL2561 breakout boards. It can also accept a BME680 breakout, which is an upgrade from the BME280 that also reads volatile organic compounds in the air, to help measure air quality.
+
+The Furball mini can also use a Dalls 1 wire temperature waterproof sensor and a PMS5003 dust particle sensor for air quality.
+
+If you'd like to learn more, check out its repository at https://github.com/romkey/furball-mini or feel free to ask me about it.
+
+#### Discoball
+
+The Discoball controls strips of individually addressable RGB LEDs. These are different from the RGB LED included in the HackPack - these LEDs each have their own controller chip, which can be connected to another RGB LED allowing you to create strands or strips of LEDs that can be controlled individually.
+
+The Discoball uses the LOLIN32 and has an optional connection for the BME280 breakout board. We use one of thse inside the PDX Hackerspace vending machine; the BME280 monitors the temperature inside the machine.
+
+The Discoball uses the level shifter board included in the Hack Pack. Most LEDs operate at 5V; the level shifter allows the LOLIN32 to properly drive them.
+
+If you'd like to learn more, check out its repository at https://github.com/romkey/discoball or feel free to ask me about it. 
