@@ -88,18 +88,42 @@ The TSL2561 uses the I2C bus to connect to a processor. I2C is a four wire bus, 
 ### 330 ohm resistors
 
 ![](images/.jpg) 
- 
+
+These resistors are used to limit the current that the RGB LED draws, to avoid burning it out or burning damaging the CPU driving it.
+
+Resistors are not polarized - it doesn't matter which end you plugin on which side. 
+
+There are three of the resistors, which should all look identical. They have the color bands 
+
+See also [Why Do Resistors Have A Color Code?](https://hackaday.com/2020/01/13/why-do-resistors-have-a-color-code/) 
+
 ### 47K ohm resistors
 
 ![](images/.jpg) 
+
+These resistors are used as "pull-up" resistors, to help stabilize signals on I2C SDA and SCL lines. These lines are driven by pins on the processor which don't connect to a high voltage for high. Connecting SDA and SCL to 3.3V through a resistor will improve the reliabilty of those signals, although circuits will often work without pull-up resistors. You only need them once, although many breakout boards have pull-up resistors integrated on them. Having multiple resistors generally doesn't do any harm.
+
+Resistors are not polarized - it doesn't matter which end you plugin on which side.  
  
+There are two of these resistors, which should look identical. They have the color bands 
+ 
+See also [Why Do Resistors Have A Color Code?](https://hackaday.com/2020/01/13/why-do-resistors-have-a-color-code/) 
+
+
 ### 100uF capacitor
 
 ![](images/.jpg) 
  
+This is a "bypass capacitor".
+
+This capacitor is polarized - it *does* matter which end you plugin on which side. Look for the side marked with the big minus sign; that side should go to ground (or the lower voltage).
+
+
 ### 100nF capacitors
 
 ![](images/.jpg) 
+
+These capacitors are not polarized - it doesn't matter which end you plugin on which side. 
  
 ### SPDT switch
 
