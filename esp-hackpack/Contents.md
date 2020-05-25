@@ -114,20 +114,32 @@ See also [Why Do Resistors Have A Color Code?](https://hackaday.com/2020/01/13/w
 
 ![100uF](images/100uF-capacitor.jpg) 
  
-This is a "bypass capacitor".
+This is a "bypass capacitor". It's used to stabilize the voltage to a part. We'll use this one, the larger capacitor, for the CPU breakout board (the D1 mini or LOLIN32). It will connect between the board's positiive power source and ground and should be as physically close to the breakout board as possible.
 
-This capacitor is polarized - it *does* matter which end you plugin on which side. Look for the side marked with the big minus sign; that side should go to ground (or the lower voltage).
+You can generally omit the bypass capacitors on a simple hobby project. If you use parts that may suddenly draw a lot of power, bypass capacitors may be necessary, and they should always be used in projects that should run for a long time or in professional projects. 
+
+This capacitor is polarized - it *does* matter which end you plugin on which side. Look for the side marked with the big minus sign (which will usually have a shorter wire); that side should go to ground (or the lower voltage).
 
 
 ### 100nF capacitors
 
 ![100nF](images/100nF-capacitors.jpg) 
 
+This is a "bypass capacitor". It's used to stabilize the voltage to a part. We'll use these, the smaller capacitors, for the sensor and OLED display breakout boards.  It will connect between the board's positiive power source and ground and should be as physically close to the breakout board as possible.
+ 
+You can generally omit the bypass capacitors on a simple hobby project. If you use parts that may suddenly draw a lot of power, bypass capacitors may be necessary, and they should always be used in projects that should run for a long time or in professional projects.  
+ 
 These capacitors are not polarized - it doesn't matter which end you plugin on which side. 
  
 ### SPDT switch
 
-![SPDT switch](images/spdt-switch.jpg) 
+![SPDT switch](images/spdt-switch.jpg)
+
+The Single Pole/Double Throw switch is breadboard-compatible. The switch will always connect one of the end pins to the center pin.
+
+### Level Shifter
+
+The level shifter is a breakout board that bidirectionally translates one voltage to another. It's useful to safely connect any of the 3.3V breakout boards in the HackPack with 5V circuitry. We won't be using it in any of the projects in this workshop.
 
 ### Furball, Furball mini and Discoball printed circuit boards
 
