@@ -56,6 +56,7 @@ The LOLIN32 is a 3.3V part. The board has a voltage regulator that allows it to 
 
 You may need to install a serial driver in order to use this board.
 
+|--------|-|
 | Windows | |
 | macOS | |
 | Linux | built-in |
@@ -78,13 +79,17 @@ The TSL2561 uses the I2C bus to connect to a processor. I2C is a four wire bus, 
 
 ### SH1106 1.3" I2C/SPI OLED display
 
-![SH1106 OLED display](images/sh1106-oled.jpg) 
+![SH1106 OLED display](images/sh1106-oled.jpg)
+
+The SH1106 OLED display can be connected to a controller via either I2C or SPI. I2C is more convenient but the SPI interface is faster, so if you want to do fast real time graphics on the display, use SPI. If you want to do a little drawing or update some text once in a while, I2C should be fine.
  
 
 ### RGB LED
 
 ![RGB LED](images/rgb-led.jpg) 
- 
+
+This RGB LED contains a red, blue and green LED which share a common positive pin (the longest wire on the LED). Connect the red, green or blue lead to ground through a resistor (liek the 330 ohm resistors provided in the HackPack) in order to light an LED. 
+
 ### 330 ohm resistors
 
 ![330 ohm resistors](images/330-ohm-resistors.jpg) 
@@ -93,7 +98,7 @@ These resistors are used to limit the current that the RGB LED draws, to avoid b
 
 Resistors are not polarized - it doesn't matter which end you plugin on which side. 
 
-There are three of the resistors, which should all look identical. They have the color bands 
+There are three of the resistors, which should all look identical. They have the color bands orange, orange, black, black.  The body color may be different from the color in the photo.
 
 See also [Why Do Resistors Have A Color Code?](https://hackaday.com/2020/01/13/why-do-resistors-have-a-color-code/) 
 
@@ -105,10 +110,9 @@ These resistors are used as "pull-up" resistors, to help stabilize signals on I2
 
 Resistors are not polarized - it doesn't matter which end you plugin on which side.  
  
-There are two of these resistors, which should look identical. They have the color bands 
+There are two of these resistors, which should look identical. They have the color bands yellow, violet, orange. The body color may be different from the color in the photo.
  
 See also [Why Do Resistors Have A Color Code?](https://hackaday.com/2020/01/13/why-do-resistors-have-a-color-code/) 
-
 
 ### 100uF capacitor
 
