@@ -112,7 +112,7 @@ See also [Why Do Resistors Have A Color Code?](https://hackaday.com/2020/01/13/w
 
 ### 100uF capacitor
 
-![100uF](images/100uf-capacitor.jpg) 
+![100uF](images/100uF-capacitor.jpg) 
  
 This is a "bypass capacitor".
 
@@ -121,7 +121,7 @@ This capacitor is polarized - it *does* matter which end you plugin on which sid
 
 ### 100nF capacitors
 
-![100nF](images/100nf-capacitors.jpg) 
+![100nF](images/100nF-capacitors.jpg) 
 
 These capacitors are not polarized - it doesn't matter which end you plugin on which side. 
  
