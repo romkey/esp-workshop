@@ -54,12 +54,9 @@ The LOLIN32 was commonly available in 2018 but is no longer manufactured and is 
 
 The LOLIN32 is a 3.3V part. The board has a voltage regulator that allows it to be powered by a 5V source (like the USB port), but the CPU may be damaged by being directly connected to 5V parts. Beware voltage levels if you connect it to an Arduino or a 5V sensor board.
 
-You may need to install a serial driver in order to use this board.
+You may need to install a serial driver in order to use this board. (links coming soon)
 
-|--------|-|
-| Windows | |
-| macOS | |
-| Linux | built-in |
+
 
 ### BME280 I2C air temperature/pressure/humidity breakout board
 
